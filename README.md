@@ -46,3 +46,48 @@
 - To uninstall, simply remove the Anaconda installation directory and optionally cleanup Conda-related config files.
 
 This approach works reliably on Ubuntu 22.04 and 24.04 LTS versions and newer Linux releases.
+
+___
+
+## To create and manage Conda environments with and without specifying a Python version, use these commands:
+
+## 1. Create an Environment with a Specific Python Version
+
+Replace `myenv` with your desired environment name and `3.10` with the Python version you want:
+```bash
+conda create --name myenv python=3.10
+```
+This creates a new environment named `myenv` with Python3.10 installed.
+
+## 2. Create an Environment Without Specifying a Python Version
+
+Just provide the environment name:
+```bash
+conda create --name myenv
+```
+This sets up an environment without any default Python installed. You can add Python or any package later.
+
+## 3. Activate the Environment
+
+To activate your environment:
+```bash
+conda activate myenv
+```
+After this, your terminal prompt will usually show the environment name (e.g., `(myenv)`), indicating it’s active.
+
+## 4. Deactivate the Environment
+
+To leave (deactivate) the current environment:
+```bash
+conda deactivate
+```
+This returns you to the base Conda environment or your system’s shell.
+
+### Summary Table
+
+| Command                                      | Purpose                                   |
+|-----------------------------------------------|-------------------------------------------|
+| `conda create --name myenv python=3.10`       | New env with Python3.10                   |
+| `conda create --name myenv`                   | New env without default Python            |
+| `conda activate myenv`                        | Activate the environment                  |
+| `conda deactivate`                            | Deactivate (exit) the environment         |
