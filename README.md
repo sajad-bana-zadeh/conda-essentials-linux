@@ -83,6 +83,21 @@ conda deactivate
 ```
 This returns you to the base Conda environment or your system’s shell.
 
+___
+## To disable the automatic activation of the base Conda environment when opening a new terminal (i.e., prevent `(base)` from being activated by default), you can run this command:
+
+```bash
+conda config --set auto_activate_base false
+```
+
+This changes the Conda configuration, specifically the `auto_activate_base` setting in the `.condarc` file, so the base environment will not be activated automatically on terminal startup.
+
+If you want to manually check or revert back to auto-activation, you can set it to true with:
+
+```bash
+conda config --set auto_activate_base true
+```
+___
 ### Summary Table
 
 | Command                                      | Purpose                                   |
@@ -91,3 +106,4 @@ This returns you to the base Conda environment or your system’s shell.
 | `conda create --name myenv`                   | New env without default Python            |
 | `conda activate myenv`                        | Activate the environment                  |
 | `conda deactivate`                            | Deactivate (exit) the environment         |
+| `conda config --set auto_activate_base false` | Disable the automatic activation conda    |
