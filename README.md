@@ -1,4 +1,4 @@
-To install Conda (specifically the Anaconda distribution) on Ubuntu Linux, follow these key steps:
+# To install Conda (specifically the Anaconda distribution) on Ubuntu Linux, follow these key steps:
 
 1. **Download the latest Anaconda installer** for Linux from the official Anaconda repository. For example, you can download the installer with wget in your terminal:
 
@@ -38,11 +38,11 @@ To install Conda (specifically the Anaconda distribution) on Ubuntu Linux, follo
    conda info
    ```
 
-   This will display information about your Conda installation if successful[11][13][15][9].
+   This will display information about your Conda installation if successful.
 
 ### Additional Notes:
 - Anaconda installs a large collection of packages. If you prefer a minimal installation, you can install Miniconda instead.
 - Conda can also be initialized for other shells like fish using `conda init fish`.
-- To uninstall, simply remove the Anaconda installation directory and optionally cleanup Conda-related config files[9].
+- To uninstall, simply remove the Anaconda installation directory and optionally cleanup Conda-related config files.
 
-This approach works reliably on Ubuntu 22.04 and 24.04 LTS versions and newer Linux releases[11][15].
+This approach works reliably on Ubuntu 22.04 and 24.04 LTS versions and newer Linux releases.
